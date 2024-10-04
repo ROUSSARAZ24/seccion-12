@@ -9,8 +9,12 @@
     <script>
         let numero;
         while(true){
-            numero=prompt("Ingresa un numero(negativo para salir)");
+            numero=parseInt(prompt("Ingresa un numero(negativo para salir)"));
+            if(numero<0){
+                break;
+            }
         }
+        document.write("has salido del bucle")
     </script>
     
 </body>
